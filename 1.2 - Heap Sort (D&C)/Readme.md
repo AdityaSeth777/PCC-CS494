@@ -1,0 +1,7 @@
+The heapify() function takes an array, its size, and an index as input parameters. It assumes that the binary trees rooted at the left and right subtrees of the current index satisfy the max heap property, but the subtree rooted at the current index itself may not satisfy the max heap property. The function recursively swaps the current element with its largest child until the subtree rooted at the current index satisfies the max heap property.
+
+The heap_sort() function takes an array and its size as input parameters. It first builds a max heap from the array using the heapify() function, starting from the last non-leaf node and moving upwards to the root. It then repeatedly swaps the largest element (at index 0) with the last element of the heap, decrements the size of the heap, and calls heapify() on the new root to maintain the max heap property. This process is repeated until the heap size becomes 1, which means the entire array is sorted in non-descending order.
+
+In the main() function, the user is prompted to enter the size of the array and its elements. The heap_sort() function is then called on the array to sort it, and the sorted array is printed to the console.
+
+The time complexity of heap sort is O(n log n) in the worst case, which is achieved when the input array is in reverse order. This is because building a heap takes O(n) time, and repeatedly swapping the largest element and calling heapify() takes O(log n) time, and this is done n times. However, the space complexity of heap sort is O(1) because it is an in-place sorting algorithm.
