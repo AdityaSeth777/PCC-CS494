@@ -1,4 +1,6 @@
-Question -> Find the median of an unsorted array and apply quick sort on that array using the median as the pivot. The median should be displayed along with the sorted array.
+Question -> 
+![](./b4.jpg)
+
 
 This is a C program to find the median of an unsorted array and then apply quick sort on that array using the median as the pivot.
 
